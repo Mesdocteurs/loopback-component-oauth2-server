@@ -45,7 +45,11 @@
             "type": "string",
             "enum": ["Bearer", "MAC"]
         },
-        "hash": "string"
+        "hash": "string",
+        "connectionToken": {
+            "type": "string",
+            "index": true
+        }
     },
     "relations": {
         "application": {

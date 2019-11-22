@@ -35,7 +35,11 @@
     ],
     "used": "boolean",
     "redirectURI": "string",
-    "hash": "string"
+    "hash": "string",
+    "connectionToken": {
+      "type": "string",
+      "index": true
+    }
   },
   "relations": {
     "application": {
