@@ -64,6 +64,10 @@
     "validateByOutsider": {
       "type": "boolean",
       "default": false
+    },
+    "partnerConfig": {
+      "type": "Object",
+      "default": null
     }
   },
   "comments": "https://tools.ietf.org/html/draft-ietf-oauth-dyn-reg-24"

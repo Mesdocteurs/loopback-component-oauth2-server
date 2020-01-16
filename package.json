@@ -1,6 +1,6 @@
 {
     "name": "@md-app/loopback-component-oauth2-server",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "OAuth 2.0 provider for LoopBack version 3",
     "engines": {
         "node": ">= 0.4.0"
@@ -19,10 +19,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/yahoohung/loopback-component-oauth2-server.git"
+        "url": "git@github.com:Mesdocteurs/loopback-component-oauth2-server.git"
     },
     "bugs": {
-        "url": "http://github.com/yahoohung/loopback-component-oauth2-server/issues"
+        "url": "https://github.com/Mesdocteurs/loopback-component-oauth2-server/issues"
     },
     "loopback-component": {},
     "main": "./lib",
