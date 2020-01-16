@@ -65,6 +65,10 @@
       "type": "boolean",
       "default": false
     },
+    "partnerId": {
+      "type": "number",
+      "default": null
+    },
     "partnerConfig": {
       "type": "Object",
       "default": null
