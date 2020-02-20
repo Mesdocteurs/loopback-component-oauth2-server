@@ -70,8 +70,9 @@
       "default": null
     },
     "partnerConfig": {
-      "type": "Object",
-      "default": null
+      "type": "object",
+      "required": false,
+      "default": "null"
     }
   },
   "comments": "https://tools.ietf.org/html/draft-ietf-oauth-dyn-reg-24"
