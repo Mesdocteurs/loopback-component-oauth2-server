@@ -45,7 +45,9 @@
     "policyURI": "string",
     "jwksURI": "string",
     "jwks": {
-      "type": "string",
+      "type": "object",
+      "required": false,
+      "default": "null",
       "mysql": {
         "dataLength": 4096,
         "dataType": "TEXT"
