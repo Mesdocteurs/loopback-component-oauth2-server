@@ -57,9 +57,9 @@
             "model": "OAuthClientApplication",
             "foreignKey": "appId"
         },
-        "user": {
+        "appUser": {
             "type": "belongsTo",
-            "model": "user",
+            "model": "AppUser",
             "foreignKey": "userId"
         }
     }
