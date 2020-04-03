@@ -18,7 +18,7 @@ See [LoopBack Documentation - OAuth 2.0 Component](http://loopback.io/doc/en/lb3
 Install the component as usual:
 
 ```
-$ npm i loopback-component-oauth2-server -S
+$ npm i @mesdocteurs/loopback-component-oauth2-server -S
 ```
 
 ## Config example
@@ -30,7 +30,7 @@ module.exports = function(app) {
     var router = app.loopback.Router();
     var passport = require('passport');
     var CustomStrategy = require('passport-custom');
-    var oauth2 = require('loopback-component-oauth2-server')
+    var oauth2 = require('@mesdocteurs/loopback-component-oauth2-server')
 
     var options = {
         // custom user model
@@ -41,7 +41,7 @@ module.exports = function(app) {
         // -------------------------------------
         resourceServer: true,
 
-        // used by modelBuilder, loopback-component-oauth2-server/models/index.js
+        // used by modelBuilder, @mesdocteurs/loopback-component-oauth2-server/models/index.js
         // Data source for oAuth2 metadata persistence
         dataSource: app.dataSources.db,
 
@@ -69,7 +69,23 @@ module.exports = function(app) {
             'authorizationCode',
             'refreshToken',
             'resourceOwnerPasswordCredentials'
-        ]
+        ],
+        models: {
+            authorizedApplication: {
+                isAuthorized: OAUTH.authorizedApplication,
+            },
+            authorizedUser: {
+                isAuthorized: OAUTH.authorizedUser,
+            },
+            openId: {
+                generateOpenIdToken: openId.generateOpenIdToken.bind(openId),
+            },
+        },
+        disabledApplicationPage: OAUTH.disabledApplicationPage,
+        forbiddenUserPage: OAUTH.forbiddenUserPage,
+        ensureLoggedIn: OAUTH.ensureLoggedIn,
+        disableAuthenticateBasic: true,
+        ttl: OAUTH.getTTL,
     }
     oauth2.oAuth2Provider(
         app,

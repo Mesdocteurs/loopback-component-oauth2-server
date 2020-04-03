@@ -63,6 +63,10 @@
     "authenticationSchemes": null,
     "icon": null,
     "url": null,
+    "accessTokenTTL": {
+      "type": "number",
+      "default": 1209600
+    },
     "validateByOutsider": {
       "type": "boolean",
       "default": false
