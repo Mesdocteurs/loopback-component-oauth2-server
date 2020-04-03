@@ -85,7 +85,7 @@ module.exports = function(app) {
         forbiddenUserPage: OAUTH.forbiddenUserPage,
         ensureLoggedIn: OAUTH.ensureLoggedIn,
         disableAuthenticateBasic: true,
-        ttl: OAUTH.getTTL,
+        getTTL: OAUTH.getTTL,
     }
     oauth2.oAuth2Provider(
         app,
