@@ -79,7 +79,8 @@
       "type": "object",
       "required": false,
       "default": "null"
-    }
+    },
+    "roles": ["string"]
   },
   "comments": "https://tools.ietf.org/html/draft-ietf-oauth-dyn-reg-24"
 }
