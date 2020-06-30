@@ -55,7 +55,6 @@
     },
     "softwareId": "string",
     "softwareVersion": "string",
-
     "callbackUrls": null,
     "permissions": null,
     "authenticationEnabled": null,
@@ -81,6 +80,13 @@
       "default": "null"
     },
     "roles": ["string"]
+  },
+  "relations": {
+    "appUser": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": "owner"
+    }
   },
   "comments": "https://tools.ietf.org/html/draft-ietf-oauth-dyn-reg-24"
 }
