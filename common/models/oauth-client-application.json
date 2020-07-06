@@ -39,6 +39,7 @@
     "clientName": "string",
     "clientURI": "string",
     "logoURI": "string",
+    "logoB64": "string",
     "scopes": ["string"],
     "contacts": ["string"],
     "tosURI": "string",
