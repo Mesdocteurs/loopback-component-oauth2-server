@@ -13,6 +13,11 @@
       "enum": ["public", "confidential"]
     },
     "redirectURIs": [ "string" ],
+    "authorizeURI": "string",
+    "proxyConfig": {
+      "type": "object",
+      "default": "null"
+    },
     "tokenEndpointAuthMethod": {
       "type": "string",
       "enum": ["none", "client_secret_post", "client_secret_basic"]
