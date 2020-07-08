@@ -27,6 +27,11 @@
       "index": true
     },
     "scopes": [ "string" ],
+    "claims": {
+      "type": "object",
+      "required": false,
+      "default": "{}"
+    },
     "parameters": [
       {
         "name": "string",

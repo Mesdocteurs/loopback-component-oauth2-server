@@ -20,7 +20,12 @@
       "type": "date",
       "index": true
     },
-    "scopes": [ "string" ]
+    "scopes": [ "string" ],
+    "claims": {
+      "type": "object",
+      "required": false,
+      "default": "{}"
+    }
   },
   "relations": {
     "application": {
